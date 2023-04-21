@@ -23,7 +23,7 @@ int main()
     std::string stNameGetTranslate;
     std::cin >> stNameGetTranslate;
 
-    std::cout << "\n1. Replace not finded texts with: NOT_TRANSLATED_TEXT\n";
+    std::cout << "\n1. Replace not founded texts with: NOT_TRANSLATED_TEXT\n";
     std::cout << "\n2. Let Text original\n";
 
     int option_replace = 1;
