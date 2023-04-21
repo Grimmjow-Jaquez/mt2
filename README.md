@@ -1,2 +1,3 @@
-# mt2
-metin2
+# metin2-repository
+
+contact: Grimm#8778
