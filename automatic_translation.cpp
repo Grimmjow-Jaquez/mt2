@@ -47,7 +47,6 @@ int main()
     while(getline(fileTranslate, line))
     {
         std::stringstream ss(line);
-
         std::vector<std::string> tokens;
 
         while (getline(ss, line, '\t'))
@@ -58,9 +57,6 @@ int main()
         
         if (tokens.size() < 2)
             continue;
-
-        std::cout << "1->>>" << tokens[0].c_str() << "\n";
-        std::cout << "2->>>" << tokens[1].c_str() << "\n";
 
         if (option_replace == 1)
             tokens[1] = "NOT_TRANSLATED_TEXT";
@@ -87,7 +83,6 @@ int main()
     while (getline(fileGetTranslate, line))
     {
         std::stringstream ss(line);
-
         std::vector<std::string> tokens;
 
         while (getline(ss, line, '\t'))
@@ -104,10 +99,13 @@ int main()
             iter->second = tokens[1];
     }
 
-	for (auto textes : map_toTranslate)
-	{
-		outputFile << textes.first << "\t" << std::get<1>(textes.second).c_str() << "\n";
-	}
+    for (auto textes : map_toTranslate)
+    {
+        outputFile << textes.first << "\t" << textes.second.c_str() << "\n";
+	    
+        std::cout << "1->>>" << textes.first.c_str() << "\n";
+        std::cout << "2->>>" << textes.second.c_str() << "\n";
+    }
 
     fileGetTranslate.close();
     outputFile.close();
