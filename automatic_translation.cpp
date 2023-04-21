@@ -11,7 +11,7 @@ int main()
     std::cout << "Location current " << g_currentPath.c_str() << "\n";
 
     std::cout << "Hello! What do you want to do?\n";
-    std::cout << "You can translate locale_game/interface.txt, itemdesc.txt\n";
+    std::cout << "You can translate locale_game/interface.txt, itemdesc.txt, item_names.txt\n";
     std::cout << "Requirement: Add file which you want to translate in same directory as executable.\n";
     
     std::cout << "\nInsert name of the file text which you want to be translate..\n";
