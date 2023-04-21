@@ -4,7 +4,6 @@
 #include <map>
 
 std::string g_currentPath = std::filesystem::current_path().string();
-const char* delim = "\t";
 
 int main()
 {
