@@ -1,5 +1,3 @@
-# @Grimm
-# Generator bosses pos from map, for clientside system information.
 if __name__ == "__main__":
 
 	# Config Me..
