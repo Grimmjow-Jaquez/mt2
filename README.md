@@ -1,3 +1,1 @@
-# metin2-repository
-
-contact: Grimm#8778
+dc contact: grimm_jow
